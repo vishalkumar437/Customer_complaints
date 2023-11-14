@@ -3,26 +3,27 @@
 
 ## Overview
 
-This project focuses on text classification of customer complaints with a primary objective of addressing class imbalance through oversampling. The ultimate goal is to create a balanced dataset for training machine learning models and evaluate their performance using various classification algorithms.
+This project focuses on text classification of customer complaints using TF-IDF  to fit machine learning algorithm for predictions.
 
 ## Project Structure
 
 The project is organized into the following key sections:
 
 1. **Data Preprocessing:**
-   - The dataset is split into training and testing sets.
-   - Data oversampling is implemented to address class imbalance, ensuring equal representation for each class.
+   - The dataset is mapped to required category.
+   - Removed unwanted columns
 
-2. **Text Cleaning:**
-   - A dedicated function `text_Cleaning` is defined for preprocessing the text data.
-   - Text cleaning techniques, including lowercase conversion, punctuation removal, and lemmatization using spaCy, are applied to enhance the quality of the text data.
+2. **TF-IDF:**
+   - finding the related content and important words and phrases in a larger text
+   - Tokenize documents
+   - Making TFIDF vectorizer to fit machine learning algorithm for predictions
 
-3. **Resulting Dataset:**
-   - The oversampled and preprocessed dataset is stored in a new DataFrame named `data_resampled`.
-
-4. **Machine Learning Models Training:**
+3. **Machine Learning Models Training:**
    - Three multi-class classification models are implemented: Random Forest, Linear Support Vector Machine (Linear SVC), and Multinomial Naive Bayes.
    - The models are trained using the preprocessed and balanced dataset to classify customer complaints into relevant categories.
+     
+4. **Model Evaluation**
+   - Confusion matrix to find thr accuracy precisoin and F1-Score
 
 ## Dependencies
 
