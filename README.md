@@ -31,8 +31,8 @@ Ensure you have the following libraries installed:
 - pandas
 - scikit-learn
 - matplotlib
-- imbalanced-learn
-- spaCy
+- numpy
+  
 
 Install dependencies using:
 
