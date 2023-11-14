@@ -33,8 +33,3 @@ Ensure you have the following libraries installed:
 - matplotlib
 - numpy
   
-
-Install dependencies using:
-
-```bash
-pip install pandas scikit-learn imbalanced-learn spacy tqdm
